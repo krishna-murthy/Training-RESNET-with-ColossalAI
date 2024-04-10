@@ -1,5 +1,5 @@
 # Training-RESNET-with-ColossalAI
-Train ResNet on CIFAR-10 using ColossalAI
+
 This repository provides scripts for training the ResNet-18 model on the CIFAR10 dataset using ColossalAI. Included are experiment logs demonstrating the execution of this example within a Google Colab notebook environment, utilizing `nproc_per_node=1` over a span of 10 epochs.
 
 ## Installation Requirements

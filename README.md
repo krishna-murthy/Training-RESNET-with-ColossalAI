@@ -12,10 +12,13 @@ pip install -r requirements.txt
 
 ## Training the model
 
-To train the model, we utilize PyTorch's Distributed Data Parallel (DDP) with floating point 32 (FP32) precision. Execute the following command to start the training process:
+To train the model, we utilize PyTorch's Distributed Data Parallel (DDP) with floating point 32 (FP32) precision. 
 
+*Please note that the `nproc_per_node` value should be adjusted according to the resources available in your environment*
+
+Execute the following command to start the training process:
 ```bash
-colossalai run --nproc_per_node 2 train_resnet_cifar10.py
+colossalai run --nproc_per_node 1 train_resnet_cifar10.py
 ```
 ## Expected accuracy
 
